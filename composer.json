@@ -1,0 +1,13 @@
+{
+    "name": "jakhongir/admin-panel-generator",
+    "description": "Generates simple admin panel for given entities.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakhongir Nishanbaev",
+            "email": "jakhongir.nishanbaev@gmail.com"
+        }
+    ],
+    "require": {}
+}
