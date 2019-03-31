@@ -3,23 +3,24 @@
 namespace AdminPanelGenerator\Helpers\ViewContent;
 
 
-use Illuminate\Support\Facades\Schema;
+use \Illuminate\Support\Facades\DB;
 
 abstract class ViewContent
 {
     private $tableName;
     private $code;
+    protected $columns;
 
     public function __construct(string $tableName)
     {
         $this->tableName = $tableName;
 
-        $this->getColumnsFromDatabase();
+        $this->generateViewContent();
     }
 
     final public function generateViewContent()
     {
-        $this->getColumnsFromDatabase();
+        $this->columns = $this->getColumnsFromDatabase();
         $this->code = $this->generateCode();
 
         return $this->code;
@@ -27,9 +28,9 @@ abstract class ViewContent
 
     public function getColumnsFromDatabase()
     {
-        $this->columns = []; // DB query here...
+        return DB::connection()->select('describe users');
 
-        dd(Schema::connection()->getColumnListing($this->tableName));
+//        dd(DB::connection()->select('describe users'));
     }
 
     abstract function generateCode();
