@@ -81,6 +81,6 @@ abstract class ViewGenerator
      */
     private function writeContent()
     {
-        $this->file->write($this->destinationPath, 'key', 'key', $this->content);
+        $this->file->write($this->destinationPath, 'key', 'key', $this->content->generateCode);
     }
 }

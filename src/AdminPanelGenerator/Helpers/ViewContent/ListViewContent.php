@@ -8,6 +8,6 @@ class ListViewContent extends ViewContent
 
     function generateCode()
     {
-        // TODO: Implement generateCode() method.
+        return 'some code';
     }
 }

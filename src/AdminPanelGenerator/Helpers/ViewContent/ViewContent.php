@@ -3,6 +3,8 @@
 namespace AdminPanelGenerator\Helpers\ViewContent;
 
 
+use Illuminate\Support\Facades\Schema;
+
 abstract class ViewContent
 {
     private $tableName;
@@ -24,6 +26,8 @@ abstract class ViewContent
     public function getColumnsFromDatabase()
     {
         $this->columns = []; // DB query here...
+
+        dd(Schema::connection()->getColumnListing($this->tableName));
     }
 
     abstract function generateCode();

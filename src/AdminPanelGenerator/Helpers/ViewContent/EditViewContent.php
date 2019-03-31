@@ -8,6 +8,6 @@ class EditViewContent extends ViewContent
 
     function generateCode()
     {
-        // TODO: Implement generateCode() method.
+        return 'some code';
     }
 }
