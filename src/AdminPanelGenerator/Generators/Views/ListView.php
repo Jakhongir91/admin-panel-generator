@@ -15,7 +15,7 @@ class ListView extends ViewGenerator
      */
     function prepareContent()
     {
-        return new ListViewContent($this->tableName);
+        return (new ListViewContent($this->tableName))->generateCode();
     }
 
     /**

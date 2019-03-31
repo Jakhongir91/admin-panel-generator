@@ -16,7 +16,7 @@ class EditView extends ViewGenerator
      */
     function prepareContent()
     {
-        return new EditViewContent($this->tableName);
+        return (new EditViewContent($this->tableName))->generateCode();
     }
 
     /**

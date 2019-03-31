@@ -16,7 +16,7 @@ class CreateView extends ViewGenerator
      */
     function prepareContent()
     {
-        return new CreateViewContent($this->tableName);
+        return (new CreateViewContent($this->tableName))->generateCode();
     }
 
     /**

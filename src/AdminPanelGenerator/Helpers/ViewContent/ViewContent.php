@@ -13,6 +13,8 @@ abstract class ViewContent
     public function __construct(string $tableName)
     {
         $this->tableName = $tableName;
+
+        $this->getColumnsFromDatabase();
     }
 
     final public function generateViewContent()
