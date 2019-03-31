@@ -3,7 +3,9 @@
 namespace AdminPanelGenerator\Generators\Views;
 
 
-class LayoutView extends View
+use AdminPanelGenerator\Constants\ViewConstants;
+
+class LayoutView extends ViewGenerator
 {
 
     /**
@@ -11,8 +13,18 @@ class LayoutView extends View
      *
      * @return mixed
      */
-    function setContentType()
+    function prepareContent()
     {
         // TODO: Implement setContentType() method.
+    }
+
+    /**
+     * Subclasses must assign view's name.
+     *
+     * @return mixed
+     */
+    function assignViewName(): string
+    {
+        return ViewConstants::$LAYOUT_VIEW_NAME;
     }
 }

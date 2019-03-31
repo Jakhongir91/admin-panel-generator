@@ -3,7 +3,10 @@
 namespace AdminPanelGenerator\Generators\Views;
 
 
-class EditView extends View
+use AdminPanelGenerator\Constants\ViewConstants;
+use AdminPanelGenerator\Helpers\ViewContent\EditViewContent;
+
+class EditView extends ViewGenerator
 {
 
     /**
@@ -11,8 +14,18 @@ class EditView extends View
      *
      * @return mixed
      */
-    function setContentType()
+    function prepareContent()
     {
-        // TODO: Implement setContentType() method.
+        return new EditViewContent($this->tableName);
+    }
+
+    /**
+     * Subclasses must assign view's name.
+     *
+     * @return mixed
+     */
+    function assignViewName(): string
+    {
+        return ViewConstants::$EDIT_VIEW_NAME;
     }
 }

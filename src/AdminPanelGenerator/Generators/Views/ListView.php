@@ -3,18 +3,28 @@
 namespace AdminPanelGenerator\Generators\Views;
 
 
+use AdminPanelGenerator\Constants\ViewConstants;
 use AdminPanelGenerator\Helpers\ViewContent\ListViewContent;
 
-class ListView extends View
+class ListView extends ViewGenerator
 {
-
     /**
      * Subclasses must decide which content type would be used.
      *
      * @return mixed
      */
-    function setContentType()
+    function prepareContent()
     {
-        $this->content = new ListViewContent($this->tableName);
+        return new ListViewContent($this->tableName);
+    }
+
+    /**
+     * Subclasses must assign view's name.
+     *
+     * @return mixed
+     */
+    function assignViewName(): string
+    {
+        return ViewConstants::$LIST_VIEW_NAME;
     }
 }

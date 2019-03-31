@@ -3,7 +3,10 @@
 namespace AdminPanelGenerator\Generators\Views;
 
 
-class CreateView extends View
+use AdminPanelGenerator\Constants\ViewConstants;
+use AdminPanelGenerator\Helpers\ViewContent\CreateViewContent;
+
+class CreateView extends ViewGenerator
 {
 
     /**
@@ -11,8 +14,18 @@ class CreateView extends View
      *
      * @return mixed
      */
-    function setContentType()
+    function prepareContent()
     {
-        // TODO: Implement setContentType() method.
+        return new CreateViewContent($this->tableName);
+    }
+
+    /**
+     * Subclasses must assign view's name.
+     *
+     * @return mixed
+     */
+    function assignViewName(): string
+    {
+        return ViewConstants::$CREATE_VIEW_NAME;
     }
 }

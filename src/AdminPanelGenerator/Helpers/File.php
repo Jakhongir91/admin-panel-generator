@@ -15,9 +15,9 @@ class File
      * @param string $filePath
      * @param string $start
      * @param string $end
-     * @param string $text
+     * @param string $content
      */
-    public function write(string $filePath, string $start, string $end, string $text)
+    public function write(string $filePath, string $start, string $end, string $content)
     {
     }
 }

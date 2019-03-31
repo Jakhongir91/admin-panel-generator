@@ -5,15 +5,16 @@ namespace AdminPanelGenerator\Generators\Views;
 
 use AdminPanelGenerator\Helpers\File;
 
-abstract class View
+abstract class ViewGenerator
 {
     protected $tableName;
     private $templatePath;
     private $destinationPath;
     private $file;
     protected $content;
+    protected $viewName;
 
-    public function __construct(string $viewName, string $tableName)
+    public function __construct(string $tableName)
     {
         $this->tableName = $tableName;
         $this->templatePath = '';
@@ -27,7 +28,8 @@ abstract class View
      */
     private function setDestinationPath()
     {
-
+        $slash = DIRECTORY_SEPARATOR;
+        $this->destinationPath = __DIR__ . $slash . '..' . '..' . '..' . '..' . '..' . '..' . '..';
     }
 
     /**
@@ -35,23 +37,27 @@ abstract class View
      */
     private function setTemplatePath()
     {
-
+        $slash = DIRECTORY_SEPARATOR;
+        $this->templatePath = __DIR__ . $slash . '..' . $slash . '..' . $slash . 'Templates' . $slash . 'Views' . $slash . $this->viewName;
     }
 
     /**
      * Create blade view file for given table name.
      */
-    final public function createView()
+    final public function createBladeFile()
     {
+        $this->viewName = $this->assignViewName();
+        $this->setTemplatePath();
+        $this->setDestinationPath();
         $this->copyFile();
-        $this->setContentType();
+        $this->content = $this->prepareContent();
         $this->writeContent();
     }
 
     /**
      * Copy file from template to destination path.
      */
-    public function copyFile()
+    private function copyFile()
     {
 
     }
@@ -61,13 +67,20 @@ abstract class View
      *
      * @return mixed
      */
-    abstract function setContentType();
+    abstract function prepareContent();
+
+    /**
+     * Subclasses must assign view's name.
+     *
+     * @return mixed
+     */
+    abstract function assignViewName() : string;
 
     /**
      * Fill code into copied view.
      */
-    public function writeContent()
+    private function writeContent()
     {
-
+        $this->file->write($this->destinationPath, 'key', 'key', $this->content);
     }
 }

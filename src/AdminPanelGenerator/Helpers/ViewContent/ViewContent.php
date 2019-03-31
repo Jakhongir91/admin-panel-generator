@@ -17,11 +17,13 @@ abstract class ViewContent
     {
         $this->getColumnsFromDatabase();
         $this->code = $this->generateCode();
+
+        return $this->code;
     }
 
     public function getColumnsFromDatabase()
     {
-        $this->columns = [];
+        $this->columns = []; // DB query here...
     }
 
     abstract function generateCode();
