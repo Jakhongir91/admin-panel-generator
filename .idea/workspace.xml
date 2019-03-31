@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb6196e8-0402-4deb-ab59-979ff2331ee8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/CreateView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/CreateView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/EditView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/EditView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/LayoutView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/LayoutView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ListView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ListView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ViewGenerator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminPanelGenerator/LCED.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelGenerator/LCED.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/LCED.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="595">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding>
                 <element signature="e#40#92#0#PHP" expanded="true" />
               </folding>
@@ -35,13 +27,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ViewGenerator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="-287">
+              <caret line="46" column="41" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ListView.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -56,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="20" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -74,7 +66,6 @@
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/CreateViewContent.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Constants/ViewConstants.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ListViewContent.php" />
-        <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/View.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/File.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ListView.php" />
@@ -83,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/CreateView.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ViewGenerator.php" />
         <option value="$PROJECT_DIR$/src/AdminPanelGenerator/LCED.php" />
+        <option value="$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php" />
       </list>
     </option>
   </component>
@@ -181,24 +173,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554037426435</updated>
-      <workItem from="1554037427888" duration="8786000" />
+      <workItem from="1554037427888" duration="9643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8786000" />
+    <option name="totallyTimeSpent" value="9643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32908162" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32908162" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -248,13 +239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/CreateView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -289,29 +273,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ListView.php">
+    <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Helpers/ViewContent/ViewContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/LCED.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding>
-            <element signature="e#57#105#0#PHP" expanded="true" />
+            <element signature="e#40#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ViewGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="-287">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/LCED.php">
+    <entry file="file://$PROJECT_DIR$/src/AdminPanelGenerator/Generators/Views/ListView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding>
-            <element signature="e#40#92#0#PHP" expanded="true" />
+            <element signature="e#57#105#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
